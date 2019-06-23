@@ -1,2 +1,2 @@
 # Quine-McCluskey-algorithm
-QM Algorithm for boolean equation reduction
+QM Algorithm for boolean equation reduction in c++ 
