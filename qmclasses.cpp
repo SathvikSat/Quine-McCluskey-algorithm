@@ -3,13 +3,7 @@ using namespace std;
 int inputs;
 string dontcares;
 
-//class boolean
-//{
-//private:
 
-
-//things are treated in string format everywhere
-//public:
 
 
 
@@ -31,7 +25,7 @@ string dontcares;
 
 
 
-/*typedef struct stack{
+typedef struct stack{
    char data[100];
    int top;
 
@@ -52,10 +46,7 @@ void pop(stack *p){
    }
 }
 
-}*/
-//boolean(int d)
-//{
-//}
+}
 
 
 
@@ -200,19 +191,11 @@ int main ()
   //  int d;
 
    
-   //char check='y';
-   //while(check=='y')
-   //{
+   
       uint num;
       cout<<"Enter the number of variables:"<<endl;
       cin>>num;
-     // if(no > 8 || no < 1)
-      //{
-        //  cout << "Invalid number of variables (1-8)" << endl;
-          //continue;
-      //}
-      //boolean q(num);
-
+     
       inputs=num;
    dontcares.append(num,'X');
    cout<<dontcares<<" "; 
@@ -221,7 +204,7 @@ int main ()
       cout<<"Enter the minterms in decimal format:" <<endl;
       cin>>deci;
       
-      /*stack<char> s;
+      stack<char> s;
       //s.top() = -1;
       //int  len = sizeof(deci);
       //cout<<len<<endl;
@@ -236,7 +219,7 @@ int main ()
         temp.push_back(s.top());
         //cout<<temp<<" ";
          s.pop();
-      }*/
+      }
       //string temp = " ";
       
          //splitting the input
@@ -268,14 +251,12 @@ int main ()
 
 
       int i;
-       //const string& j =  q.getValue(minterms[i]);
+      
       cout << "Reduced boolean Equation as SUM OF PRODUCTS is: " << endl;
       for (i=0;i<minterms.size()-1; i++)
-         //   cout <<j<<"+";
+
           cout <<getValue(minterms[i])<<"+";
       cout<<getValue(minterms[i])<<endl;
-       // cout <<j<<"+";
-      //cout<<"Would you like to enter another expression? (y/n)"<<endl;
-      //cin>>check;
+       
    }
    
